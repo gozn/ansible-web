@@ -1,7 +1,7 @@
 <?php
 // File: config.php
 $host = 'localhost';
-$db = 'test_db';
+$db   = 'test_db';
 $user = 'root';
 $pass = 'password';
 

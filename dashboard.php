@@ -1,5 +1,5 @@
-<!-- File: dashboard.php -->
 <?php
+// File: dashboard.php
 session_start();
 if (!isset($_SESSION['user'])) {
     header('Location: index.php');
@@ -13,6 +13,10 @@ if (!isset($_SESSION['user'])) {
 </head>
 <body>
 <h2>Welcome, <?php echo htmlspecialchars($_SESSION['user']); ?>!</h2>
-<a href="logout.php">Logout</a>
+<ul>
+    <li><a href="upload.php">Upload File</a></li>
+    <li><a href="readfile.php">Read File</a></li>
+    <li><a href="logout.php">Logout</a></li>
+</ul>
 </body>
 </html>

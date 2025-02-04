@@ -1,4 +1,5 @@
 <?php
+// File: upload.php
 session_start();
 if (!isset($_SESSION['user'])) {
     header('Location: index.php');
@@ -29,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Upload File</title>
 </head>
 <body>
-<h2>Upload File (Có lỗ hổng Webshell)</h2>
+<h2>Upload File</h2>
 <form method="post" enctype="multipart/form-data">
     <label>Chọn file:</label>
     <input type="file" name="file" required><br>
